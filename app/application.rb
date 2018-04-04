@@ -1,4 +1,4 @@
-class Application 
+class Application
 
   @@items = []
 
@@ -13,11 +13,11 @@ class Application
       else
         resp.status = 400
         resp.write "Item not found"
-    else 
+    else
       resp.status = 404
       resp.write "Route not found"
-    end 
+    end
     resp.finish
-  end 
-  
+  end
+
 end
